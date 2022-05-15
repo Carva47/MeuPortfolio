@@ -78,7 +78,7 @@ nav.sticky .navbar li a:hover{
 .home{
     height: 100vh;
     width: 100%;
-    background: url("C:/Users/C4RV47/Desktop/MeuPortfólio/public/img/banner/banner.jpg") no-repeat;
+    background: url(C:/Users/C4RV47/Desktop/MeuPortfólio/public/img/banner/banner.png) no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
