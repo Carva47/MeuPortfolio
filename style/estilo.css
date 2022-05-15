@@ -1,0 +1,551 @@
+/* menu de navegação com css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition: all 0.4s ease;
+    z-index: 998;
+}
+nav.sticky{
+    padding: 5px 0;
+    background: white;
+}
+nav .navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .logo a{ 
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(185, 206, 30);
+}
+nav.sticky .navbar .logo a{
+    background: rgba(252, 248, 248, 0.007);
+}
+nav .navbar .menu{
+    display: flex;
+}
+nav .navbar .menu li{
+    margin:  0 8px;
+    list-style: none;
+}
+nav.sticky .navbar .menu li{
+    background: rgba(202, 11, 11, 0);
+}
+nav .navbar .menu img{
+   width: 30px;
+}
+.navbar .menu li a{
+    font-size: 18px;   
+    font-weight: bold;
+    color: rgb(185, 206, 30);
+    transition: all0.3s ease;
+}
+.navbar .menu li a:hover{
+
+  font-size: 20px;
+}
+.media-icones img{
+    width: 27px;
+}
+.media-icones a{
+    font-size: 18px;
+    margin: 0 4px;
+    
+}
+nav.sticky .navbar a{
+   color: rgb(0, 0, 0);
+}
+nav.sticky .navbar li a:hover{
+ 
+    font-size: 20px;
+}
+/* Estilagem da sessão de ínicio */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("C:/Users/C4RV47/Desktop/MeuPortfólio/public/img/banner/banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home .home-principal{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    font-family: 'Trebuchet MS', sans-serif;
+    color:rgb(185, 206, 30);
+}
+.home .texto .primeiro-texto{
+    font-size: 40px;
+}
+.home .texto .segundo-texto{
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .texto .terceiro-texto{
+    font-size: 25px; 
+}
+.home .button{
+    margin: 14px 0;
+}
+.home .button button{
+    outline:none;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+     background:  rgb(185, 206, 30);
+     transition: all 0.4s ease;
+}
+.home .button button:hover{
+    color:  rgb(185, 206, 30);
+    background-color: transparent;
+    border-color:  rgb(185, 206, 30);
+}
+
+  /* Resposividade Botão do Menu com Media Query*/
+  nav .btn-menu, 
+  .navbar .cancelar-btn{
+        position: absolute;
+        font-size: 20px;
+        right: 30px;
+        top: 20px;
+        display: none;
+}
+   /* Sobre mim css*/
+section.content{
+    width: 80%;
+    margin: 10px auto; 
+    font-family: 'Trebuchet MS', sans-serif;
+    
+}
+section .titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.skills .titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+section .titulo span{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative ;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:  rgb(185, 206, 30);;
+    margin-top: 5px;   
+}
+section .titulo span::before,
+section .titulo span::after{
+content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+height: 3px;
+width: 100%;
+background: #c9e42f;
+}
+.sobre-mim .titulo span::after{
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -7px;
+   
+}
+.skills .titulo span::after{
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -7px;
+   
+}
+.sobre-mim .detalhes-sobremim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+.sobre-mim .detalhes-sobremim .left {
+    width: 45%;
+}
+.sobre-mim .detalhes-sobremim .left img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 190px;
+    padding: 5px;
+}
+
+.sobre-mim .detalhes-sobremim .texo2{
+    width: 55%;
+}
+section .topic{
+    font-size:  25px;
+    font-weight: 500;
+    color:rgb(185, 206, 30);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.detalhes-sobremim .texo2 p{
+
+    text-align: justify;
+   padding-right: 20px;
+}
+.detalhes-sobremim p{
+    text-align: justify;
+    width: 50%;
+   color: #FFF;
+   margin-left:  90px;
+}
+section .button{
+    margin-left: 159px;
+    margin-top: 30px;
+}
+section .button button{
+    outline:none;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+     background:  rgb(185, 206, 30);
+     transition: all 0.4s ease;
+}
+ section .button button:hover{
+    color:  rgb(185, 206, 30);
+    background-color: transparent;
+    border-color: rgb(185, 206, 30);
+} 
+
+/* Minhas habilidade*/
+.skills{
+    background:rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 50px;
+   
+}
+.skills .content{
+    padding: 40px 0;
+}
+.skills .skill-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skill-details  .left{
+  width: 50%;   
+}
+
+.skill-details .left p{
+    color:  rgb(185, 206, 30);
+    text-align: justify;
+}
+.skill-details .left .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.skill-details .left .experience .num{
+    font-size: 200px; 
+    color: rgb(185, 206, 30);
+    font-weight: 700;
+    margin-left: 60px;
+}
+.skill-details .left .experience .exp{
+    font-size: 30px; 
+    color: rgb(185, 206, 30);
+    font-weight: 600;
+    margin-left: 20px;
+    margin: 0 6px;
+}
+.skill-details .boxe{
+    width: 45%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    color:rgb(185, 206, 30);
+}
+.skills .skill-details .boxe .box{
+width: calc(100% / 2 - 20px);
+}
+.skill-details .boxe.topic{
+    font-size: 2px;
+    color: rgb(185, 206, 30);
+    font-weight: 500;
+    margin-left: 50px;
+}
+.skill-details .boxe .num{
+    font-size: 60px;
+    font-weight: 500;
+    color:rgb(185, 206, 30);
+}
+.skills .left .topic{
+    color:rgb(185, 206, 30);
+    margin-left: 30px;
+}
+
+/* Meus serviços**/
+.servicos .boxe{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding:100px;
+    background: #191919;
+}
+.servicos .boxe .box{
+    width: calc(100%/ 3 - 20px);
+    margin: 5px 0x;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgb(185, 206, 30);
+    text-align: center;
+    padding: 30px 20px;   
+}
+.servicos .boxe .box:hover{
+    box-shadow: 0 5px 10px rgb(0, 255, 191); 
+    cursor: pointer;
+    font-size: 100px;
+    transition: all 0.3s ease;
+}
+.servicos .boxe .box .icone{
+    height: 50px;
+    width: 50px;
+    text-align: center; 
+    line-height: 2px;
+    margin: 0 auto 20px  auto;
+}
+.servicos .boxe .box .topic{
+    color: rgb(185, 206, 30);
+    font-size: 25px;
+}
+.servicos p{
+    color: rgb(185, 206, 30);
+    font-size: 15px;
+}
+
+/*Contacta-me*/
+.contacto .texto{
+    text-align: center;
+    margin: auto;
+    width:90%;
+    background: rgb(0, 0, 0);
+    padding: 80px;
+    color: #FFF;
+}
+#contbtn{
+    margin-right: 130px;
+}
+
+/*Footer*/
+footer{
+  
+    width: 100%;
+    
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+footer p{
+    font-size: 16px;
+    color: rgb(88, 165, 25);
+    margin-bottom: 2px;
+}
+.social{
+    display: flex;
+  margin-bottom: 0px;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin:22px 5px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+/* scroll*/
+.scroll-btn img{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    padding: 7px 12px;
+
+    width: 80px;;
+}
+.end{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   margin-bottom: 10px;
+    color:#aa4848;
+    font-size: 16px;
+   
+}
+#btnf{ position:fixed; 
+     right: 15px; 
+     bottom: 400px;
+}
+#btnf img{
+    width:70px;
+    animation: vai-vem 5s infinite alternate;
+}
+@keyframes vai-vem {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}   
+ /* Resposividade Media Query*/
+ @media (max-width: 1190px){
+     .sobre-mim .container{
+         width: 85%;
+     }
+     .skills .content{
+         width: 90%;
+     }
+     .servicos.content{
+        width: 90%;
+    }
+ }
+ @media (max-width: 1090px){
+
+    .sobre-mim .detalhes-sobremim{
+       flex-direction: column;
+    }
+    .sobre-mim .detalhes-sobremim .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sobre-mim .detalhes-sobremim .texo2{
+        width: 90%;
+
+        margin: 40px 0;
+    }
+    .servicos .boxe .box{
+        width: calc(100% / 2 - 20px);
+    }
+ }
+ @media (max-width: 971px){
+
+    .sobre-mim .detalhes-sobremim .foto img{
+        height: 200px;
+        width: 250px;
+    } 
+ }
+
+ @media (max-width: 750px) {
+     nav .navbar .menu{
+           position:absolute;
+           left:-100%;
+           top: 0;
+           height: 100vh;
+           max-width: 400px;
+           width: 100%;
+           background: #0E2431;
+           flex-direction: column;
+           align-items: center;
+           padding-top: 60px; 
+           transition: all 0.5s ease;
+     }
+     nav .navbar.ativar .menu{
+         left: 0;
+     }
+     .navbar .menu li a{
+         display: block ;
+         margin: 10px 0;
+         font-size: 23px;
+         color:#FFF;
+     }
+     .navbar .media-icones a{
+         display: none;
+     }
+     nav .btn-menu, 
+     .navbar .cancelar-btn{
+         display: block;
+     }
+     .servicos .boxe .box{
+        width: calc(100% / 1 - 20px);
+    }
+ }
+
+.home .texto .segundo-texto{
+    font-size: 55px;
+}
+.home .texto .terceiro-texto{
+    font-size: 15px; 
+}    
+@media (max-width: 768px){
+    .home .texto .segundo-texto{
+        font-size: 45px;
+    }
+    .home .texto .terceiro-texto{
+        font-size: 12px; 
+    }  
+    .skills .skill-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skill-details  .left{
+        width: 90%;   
+      }
+      .skills .skill-details  .boxe{
+        width: 90%;   
+        margin: 40px 0;
+      }    
+      .servicos .boxe .box{
+       width: 100%;
+       flex-wrap: wrap;
+       flex-direction:column ;
+   } 
+   .contacto .texto{
+    
+    width:100%;
+}
+} 
+@media (max-width: 510px){
+    .home .texto .segundo-texto{
+        font-size: 45px;
+    }
+    .home .texto .terceiro-texto{
+        font-size: 12px; 
+    } 
+} 
